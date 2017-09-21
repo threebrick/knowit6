@@ -25,3 +25,9 @@ server.post('https://knowit6.azurewebsites.net//api/messages', connector.listen(
 var bot = new builder.UniversalBot(connector, function (session) {
     session.send("You said: %s", session.message.text);
 });
+
+
+server.get('/', restify.serveStatic({
+ directory: __dirname,
+ default: '/index.html'
+}));
