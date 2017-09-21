@@ -1,0 +1,23 @@
+{
+  "name": "knowit6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/threebrick/knowit6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/threebrick/knowit6/issues"
+  },
+  "homepage": "https://github.com/threebrick/knowit6",
+  "dependencies": {
+    "botbuilder": "^3.9.1",
+    "restify": "^6.0.1"
+  }
+}
