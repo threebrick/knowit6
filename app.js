@@ -58,7 +58,7 @@ var bot = new builder.UniversalBot(connector);
 });*/
 bot.set('storage', new builder.MemoryBotStorage());         // Register in-memory state storage
 //server.post('/api/messages', connector.listen());
-server.post('https://knowit6.azurewebsites.net/api/messages', connector.listen());
+server.post('https://hotseatreservation.azurewebsites.net/api/messages', connector.listen());
 
 //=========================================================
 // Recognizers
