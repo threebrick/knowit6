@@ -34,8 +34,10 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 var connector = new builder.ChatConnector({
     //appId: process.env.MICROSOFT_APP_ID,
     //appPassword: process.env.MICROSOFT_APP_PASSWORD
-    appId: '4e6c8ad5-aa9c-4dee-a2eb-7d97098d72d3',
-    appPassword: 'bRUtrd6PqDmDi5Up7Es8Ew1'
+    //appId: '4e6c8ad5-aa9c-4dee-a2eb-7d97098d72d3',
+    //appPassword: 'bRUtrd6PqDmDi5Up7Es8Ew1'
+    appId: '5778e28e-35e4-4cae-80eb-66d797996152',
+    appPassword: '6zh4NJX7zO5iFEuRdKJpXzq'
 });
 var bot = new builder.UniversalBot(connector);
 /*var bot = new builder.UniversalBot(connector, function(session) {
@@ -58,7 +60,7 @@ var bot = new builder.UniversalBot(connector);
 });*/
 bot.set('storage', new builder.MemoryBotStorage());         // Register in-memory state storage
 //server.post('/api/messages', connector.listen());
-server.post('https://hotseatreservation.azurewebsites.net/api/messages', connector.listen());
+server.post('https://eyreserve.azurewebsites.net/api/messages', connector.listen());
 
 //=========================================================
 // Recognizers
