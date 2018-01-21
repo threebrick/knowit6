@@ -1,23 +1,19 @@
 {
-  "name": "knowit6",
+  "name": "qnawithluis",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/threebrick/knowit6.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/threebrick/knowit6/issues"
-  },
-  "homepage": "https://github.com/threebrick/knowit6",
   "dependencies": {
     "botbuilder": "^3.13.1",
-    "restify": "^6.3.4"
+    "botbuilder-cognitiveservices": "^1.1.0",
+    "dotenv": "^4.0.0",
+    "restify": "^6.3.4",
+    "striptags": "^3.1.1",
+    "watson-developer-cloud": "^3.0.4"
   }
 }
