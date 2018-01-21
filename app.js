@@ -219,3 +219,11 @@ dialog.matches('qna', [
         session.send('Sorry!! No match!!');
     }
 ]);*/
+
+server.get('/', restify.serveStatic({
+
+ directory: __dirname,
+
+ default: '/index.html'
+
+}));
